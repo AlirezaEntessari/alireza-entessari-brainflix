@@ -1,0 +1,70 @@
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/fonts' as *;
+
+.header {
+
+    &__logo {
+        padding-bottom: 24px;
+        height: 30%;
+        width: 30%;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 21px;
+        left: 104px;
+
+    }
+
+
+    &__input {
+        background-color: #FAFAFA; 
+        height: 24px;
+        width: 360px;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        padding: 12px;
+        margin-right: 16px;
+    }
+
+    &__input::placeholder{
+        color: #323232;
+        padding-left: 24px;
+    }
+
+    &__image {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 5px
+        // margin-left: 24px;
+        // margin-top: 32px;
+    }
+
+    &__button {
+        width: 75%;
+        height: 48px;
+        background-color: #0095FF;
+        border-radius: 4px;
+        color: #ffffff;
+        margin-top: 32px;
+    }
+
+}
+
+// @include tablet {
+
+//     .header {
+
+//         &__nav {
+//             display: flex;
+//         }
+
+//     }
+// }
