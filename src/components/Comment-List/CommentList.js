@@ -1,15 +1,19 @@
 import { Comment } from "../Comment/Comment";
-import commentData from "../../data/Data/video-details.json"
 
-export const CommentList = () => {
+
+export const CommentList = ( { comments } ) => {
+   
+
+
     return (
         <>
-            {commentData.map(comment => {
+            {comments.map(comment => {
                 return (
                     <Comment 
                         key={comment.id}
                         name={comment.name}
-                        timestamp={comment.timestamp}    
+                        timestamp={comment.timestamp}
+                        comment={comment.comment}    
                     />
                 )
             })}
