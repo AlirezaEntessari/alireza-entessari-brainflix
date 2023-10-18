@@ -5,7 +5,7 @@ import UploadIcon from '../../assets/icons/Icons/upload.svg'
 
 import './Header.scss'
 
-function Header() {
+const Header = () => {
     return (
         <>
             <header>
@@ -24,8 +24,10 @@ function Header() {
                             </form>
                         </div>
                         <div className="header__bottom">
-                            <img src={UploadIcon} alt="Upload Icon" />
-                            <button className='header__button'>UPLOAD</button>
+                            <div className="header__bottom--container">
+                                <img className='header__upload' src={ UploadIcon } alt="Upload Icon" />
+                                <button className='header__button'>UPLOAD</button>
+                            </div>
                         </div>
                     </nav>
                 </div>
