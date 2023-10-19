@@ -1,16 +1,19 @@
-
+import './Sidebar.scss'
 
 const Sidebar = ( {sideBarDetails} ) => {
     return (
         <>
-            {sideBarDetails.map(video => {
-                return (
-                    <div>
-                        <img src={video.image} alt="" />
-                        <h3>{video.title}</h3>
-                    </div>
-                )
-            })}
+            <div className='sidebar'>
+                {sideBarDetails.map(video => {
+                    return (
+                        <div>
+                            <img className="sidebar__image" src={video.image} alt="" />
+                            <h3 className="sidebar__title">{video.title}</h3>
+                        </div>
+                    )
+                })}
+            </div>
+            
 
 
 
