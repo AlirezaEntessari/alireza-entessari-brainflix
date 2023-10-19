@@ -5,7 +5,7 @@ const Hero = ( { image } ) => {
     return (
         <>
 
-        <video poster={ image }></video>
+        <video className='hero__video' poster={ image }></video>
 
 
 
