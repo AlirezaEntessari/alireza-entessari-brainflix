@@ -4,6 +4,7 @@ import { CommentList } from './components/Comment-List/CommentList';
 import videoData from "./data/Data/video-details.json"
 import { useState } from "react";
 import { Hero } from './components/Hero/Hero';
+import sidebarData from './data/Data/videos.json';
  
 
 function App() {
