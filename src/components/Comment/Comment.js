@@ -1,6 +1,7 @@
 import './Comment.scss'
 import Image from '../../assets/images/Images/Mohan-muruge.jpg'
 
+
 const Comment = ( { name, comment, timestamp } ) => {
     return (
 
@@ -13,7 +14,8 @@ const Comment = ( { name, comment, timestamp } ) => {
           
             <div className="comment__comment">{ comment }</div>
         </div>
-       
+
+            
     )
 }
 
