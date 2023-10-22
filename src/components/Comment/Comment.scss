@@ -25,7 +25,8 @@
     }
 
     &__name {
-        margin-right: 128px;
+        // margin-right: 128px;
+        margin-right: 250px;
     }
 
     &__timestamp {
@@ -46,9 +47,20 @@
 
     .comment {
 
+        padding-bottom: 24px;
+
+
+        &__image {
+            margin-right: 24px;
+        }
+
        
         &__name {
-            margin-right: 500px;
+            margin-right: 550px;
+        }
+
+        &__comment {
+            width: 85%;
         }
 
 

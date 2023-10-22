@@ -1,8 +1,20 @@
 import './Description.scss'
 import Views from '../../assets/icons/Icons/views.svg'
 import Likes from '../../assets/icons/Icons/likes.svg'
+import React, {useState, useEffect} from 'react'
 
 export const Description = ({videoDetails}) => {
+
+    function formatTimeStamp(timestamp){
+
+        const date = new Date(timestamp);
+        const formattedDate = date.toLocaleDateString();
+
+        return formattedDate;
+
+    }
+
+
     return (
         <div className="description">
             <h1 className="description__title">{videoDetails.title}</h1>
@@ -14,7 +26,7 @@ export const Description = ({videoDetails}) => {
                         <span className='description__views'>{videoDetails.views}</span>
                     </div>
                     <div className='description__bottom'>
-                        <span className='description__date'>{videoDetails.timestamp}</span>
+                        <span className='description__date'>{formatTimeStamp(videoDetails.timestamp)}</span>
                         <span><img className='description__likes--icon' src={Likes} alt="views likes"/></span>
                         <span className='description__likes'>{videoDetails.likes}</span>
                     </div>
