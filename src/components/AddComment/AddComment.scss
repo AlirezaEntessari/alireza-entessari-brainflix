@@ -1,0 +1,109 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+
+.add-comment {
+
+    padding: 32px;
+
+    &__container {
+        display: flex;
+        padding-left: 16px;
+        padding-right: 50px;
+    }
+
+    &__image {
+        border-radius: 50%;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        margin-top: 32px;
+    }
+
+    &__label {
+       color: $brainflix-silver;
+       position: absolute;
+       right: 255px;
+    }
+ 
+
+    &__textbox {
+        margin-top: 32px;
+        width: 100%;
+        width: 90%;
+        background-color: $brainflix-alabaster;
+        color: $brainflix-black;
+        margin-left: 32px;
+        padding: 12px;;
+    }
+
+
+    &__button {
+        margin-top: 24px;
+        margin-left: 94px;
+        background-color: $brainflix-blue;
+        color: $brainflix-white;
+        width: 72%;
+        height: 48px;
+        background-image: url("../../assets/icons/Icons/add_comment.svg");
+        background-repeat: no-repeat;
+        background-position: 12px;
+        border-color: $brainflix-blue;
+        border-radius: 4px;
+    }
+
+}
+
+@include tablet {
+
+    .add-comment{
+       
+        &__container{
+            display: flex;
+        }
+
+        &__image {
+            margin-top: 24px;
+        }
+
+        &__label {
+            left: 140px;
+        }
+
+        &__textbox {
+            height: 16px;
+            width: 60%;
+        }
+
+        &__button {
+            width: 200px;
+            position: absolute;
+            right: 72px;
+            top: 1028px;
+        }
+
+
+    }
+
+}
+
+@include desktop {
+
+    .add-comment {
+
+        margin-left: 100px;
+
+        &__label {
+            left: 240px;
+        }
+
+        &__button {
+            right: 390px;
+            top: 1503px;
+        }
+
+
+
+    }
+
+}

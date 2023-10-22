@@ -7,6 +7,7 @@ import { Hero } from './components/Hero/Hero';
 import sidebarData from './data/Data/videos.json';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { Description } from './components/Description/Description';
+import { AddComment } from './components/AddComment/AddComment';
  
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Header/>
       <Hero image={videoDetails.image}/>
       <Description videoDetails={videoDetails}/>
+      <AddComment/>
       <CommentList comments={videoDetails.comments}/>
       <Sidebar sideBarDetails={sideBarDetails}/>
       
