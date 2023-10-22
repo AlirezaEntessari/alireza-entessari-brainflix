@@ -63,10 +63,16 @@
             width: 85%;
         }
 
-
-
     }
 
 
+}
 
+@include desktop {
+
+    .comment {
+
+        margin-left: 200px;
+
+    }
 }
