@@ -1,4 +1,60 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+
+
 .comment {
-    border-bottom: 1px solid #E1E1E1;
+
+    padding: 16px;
+    font-weight: 900;
+    border-bottom: 1px solid $brainflix-mercury;
+    border-top: 1px solid $brainflix-mercury;
     height: 100px;
+    padding-bottom: 32px;
+
+    &__container {
+        display: flex;
+    }
+
+    &__image {
+        background-color: $brainflix-mercury;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+
+    &__name {
+        margin-right: 128px;
+    }
+
+    &__timestamp {
+        color: $brainflix-silver;
+        font-weight: 900;
+    }
+
+    &__comment {
+        margin-top: 0;
+        margin-left: 72px;
+        width: 60%;
+        
+    }
+
+}
+
+@include tablet {
+
+    .comment {
+
+       
+        &__name {
+            margin-right: 500px;
+        }
+
+
+
+    }
+
+
+
 }
