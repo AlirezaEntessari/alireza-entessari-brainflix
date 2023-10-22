@@ -21,7 +21,7 @@
     
     &__title {
         color: $brainflix-black;
-        
+        width: 85%;
     }
 
     &__channel {
@@ -76,6 +76,11 @@
             display: flex;
         }
 
+        &__channel{
+            margin-right: 12px;
+        }
+
+
         &__bottom {
             padding-top: 24px;
             margin-left: 100px;
@@ -88,27 +93,53 @@
 
         &__views--icon {
             position: absolute;
-            right: 350px;
+            right: 250px;
         }
 
         &__views {
             position: absolute;
-            right: 284px;
+            right: 184px;
         }
 
         &__likes--icon {
             position: absolute;
-            right: 230px;
+            right: 120px;
         }
 
         &__likes {
             position: absolute;
-            right: 184px;
+            right: 74px;
         }
+
+        &__top {
+            padding-bottom: 12px;
+        }
+
+        &__description {
+            padding-top: 8px;
+        }
+
 
 
 
     }
 
 
+}
+
+@include desktop {
+
+    .description {
+
+        margin-left: 100px;
+
+        &__date {
+            position: absolute;
+            left: 300px;
+        }
+
+
+
+
+    }
 }

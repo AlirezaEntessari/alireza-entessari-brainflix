@@ -23,5 +23,6 @@ export const Description = ({videoDetails}) => {
             </div>
             <p className="description__description">{videoDetails.description}</p>
         </div>
+        
     )
 }
