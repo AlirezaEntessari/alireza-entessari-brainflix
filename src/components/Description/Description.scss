@@ -1,0 +1,114 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+
+
+.description {
+
+    font-weight: 900;
+    padding: 18px;
+    font-family: 'Avenir';
+
+    &__container {
+        border-top: 1px solid $brainflix-mercury;
+        border-bottom: 1px solid $brainflix-mercury;
+    }
+
+    &__top {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    &__title {
+        color: $brainflix-black;
+        
+    }
+
+    &__channel {
+        margin-right: 200px;
+    }
+
+    &__views--icon {
+        margin-right: 16px;
+    }
+
+    &__views {
+        color: $brainflix-silver; 
+    }
+
+    &__date {
+        margin-right: 170px;
+        color: $brainflix-silver;
+    }
+
+    &__likes--icon{
+        margin-right: 16px;
+    }
+
+    &__likes {
+        color: $brainflix-silver;
+    }
+
+    &__description {
+        color: $brainflix-black;
+    }
+
+    &__bottom {
+        padding-bottom: 24px;
+    }
+
+
+}
+
+@include tablet {
+
+    .description {
+
+        &__title {
+            margin-bottom: 0;
+        }
+
+        &__container {
+            border-top: 1px solid $brainflix-white;
+        }
+
+        &__subcontainer {
+            display: flex;
+        }
+
+        &__bottom {
+            padding-top: 24px;
+            margin-left: 100px;
+        }
+
+        &__date {
+            position: absolute;
+            left: 200px;
+        }
+
+        &__views--icon {
+            position: absolute;
+            right: 350px;
+        }
+
+        &__views {
+            position: absolute;
+            right: 284px;
+        }
+
+        &__likes--icon {
+            position: absolute;
+            right: 230px;
+        }
+
+        &__likes {
+            position: absolute;
+            right: 184px;
+        }
+
+
+
+    }
+
+
+}
