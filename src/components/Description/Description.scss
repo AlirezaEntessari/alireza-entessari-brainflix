@@ -64,6 +64,8 @@
 
     .description {
 
+        padding: 32px;
+
         &__title {
             margin-bottom: 0;
         }
@@ -108,7 +110,7 @@
 
         &__likes {
             position: absolute;
-            right: 74px;
+            right: 64px;
         }
 
         &__top {
@@ -136,6 +138,22 @@
         &__date {
             position: absolute;
             left: 300px;
+        }
+
+        &__views--icon {
+            right: 950px;
+        }
+
+        &__views {
+            right: 884px;
+        }
+
+        &__likes--icon {
+            right: 820px;
+        }
+
+        &__likes {
+            right: 764px;
         }
 
 
