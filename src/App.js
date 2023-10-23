@@ -7,7 +7,10 @@ import sidebarData from './data/Data/videos.json';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { Description } from './components/Description/Description';
 import { AddComment } from './components/AddComment/AddComment';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.scss'
+import { HomePage } from './pages/HomePage/HomePage';
+import { UploadPage } from './pages/UploadPage/UploadPage';
  
 
 function App() {
@@ -18,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      {/* <Header/>
       <Hero image={videoDetails.image}/>
       <div className='App__container'>
         <div className="App__subcontainer">
@@ -29,7 +32,15 @@ function App() {
         <div className="App__sidebar">
           <Sidebar sideBarDetails={sideBarDetails}/>
         </div>
-      </div>
+      </div> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="" element={<UploadPage/>} />
+          <Route path="" element={<HomePage/>} />
+        </Routes>
+      </BrowserRouter>
       
     </div>
   );
