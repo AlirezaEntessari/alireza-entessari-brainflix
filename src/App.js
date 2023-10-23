@@ -14,7 +14,7 @@ function App() {
 
   const [ videoDetails, setVideoDetails ] = useState(videoData[0]); 
   const [ sideBarDetails, setSidebarDetails ] = useState(sidebarData);
-  
+
 
   return (
     <div className="App">
