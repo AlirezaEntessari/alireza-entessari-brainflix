@@ -6,7 +6,7 @@
 .description {
 
     font-weight: 900;
-    padding: 18px;
+    padding: 1.125rem;
     font-family: 'Avenir';
 
     &__container {
@@ -15,8 +15,8 @@
     }
 
     &__top {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
     
     &__title {
@@ -25,11 +25,11 @@
     }
 
     &__channel {
-        margin-right: 200px;
+        margin-right: 12.5rem;
     }
 
     &__views--icon {
-        margin-right: 16px;
+        margin-right: 1rem;
     }
 
     &__views {
@@ -37,12 +37,12 @@
     }
 
     &__date {
-        margin-right: 214px;
+        margin-right: 13.375rem;
         color: $brainflix-silver;
     }
 
     &__likes--icon{
-        margin-right: 16px;
+        margin-right: 1rem;
     }
 
     &__likes {
@@ -54,7 +54,7 @@
     }
 
     &__bottom {
-        padding-bottom: 24px;
+        padding-bottom: 1.5rem;
     }
 
 
@@ -64,10 +64,12 @@
 
     .description {
 
-        padding: 32px;
+        padding: 2rem;
 
         &__title {
             margin-bottom: 0;
+            font-size: 2.75rem;
+            font-weight: 400;
         }
 
         &__container {
@@ -79,49 +81,47 @@
         }
 
         &__channel{
-            margin-right: 12px;
+            margin-right: .75rem;
         }
 
 
         &__bottom {
-            padding-top: 24px;
-            margin-left: 100px;
+            padding-top: 1.5rem;
+            margin-left: 6.25rem;
         }
 
         &__date {
             position: absolute;
-            left: 200px;
+            left: 12.5rem;
         }
 
         &__views--icon {
             position: absolute;
-            right: 250px;
+            right: 15.625rem;
         }
 
         &__views {
             position: absolute;
-            right: 184px;
+            right: 11.5rem;
         }
 
         &__likes--icon {
             position: absolute;
-            right: 120px;
+            right: 7.5rem;
         }
 
         &__likes {
             position: absolute;
-            right: 64px;
+            right: 4rem;
         }
 
         &__top {
-            padding-bottom: 12px;
+            padding-bottom: .75rem;
         }
 
         &__description {
-            padding-top: 8px;
+            padding-top: .5rem;
         }
-
-
 
 
     }
@@ -133,30 +133,44 @@
 
     .description {
 
-        margin-left: 100px;
+        width: 43.75rem;
+        margin-left: 6.25rem;
 
+        &__container {
+            border-bottom: none;
+        }
+
+        &__title {
+            width: 43.75rem;
+        }
+
+
+        &__subcontainer {
+            width: 62.5rem;
+            border-bottom: 2px solid $brainflix-mercury;
+        }
+
+        
         &__date {
             position: absolute;
-            left: 300px;
+            left: 18.75rem;
         }
 
         &__views--icon {
-            right: 950px;
+            right: 59.375rem;
         }
 
         &__views {
-            right: 884px;
+            right: 55.25rem;
         }
 
         &__likes--icon {
-            right: 820px;
+            right: 51.25rem;
         }
 
         &__likes {
-            right: 764px;
+            right: 47.75rem;
         }
-
-
 
 
     }

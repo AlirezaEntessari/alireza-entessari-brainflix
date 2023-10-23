@@ -12,7 +12,6 @@ const Sidebar = ( {sideBarDetails} ) => {
                                 <img className="sidebar__image" src={video.image} alt="" />
                                 <h3 className="sidebar__title">{video.title} <span className='sidebar__author'>{video.channel}</span></h3>
                             </div>
-                            {/* <p className='sidebar__author'>{video.channel}</p> */}
                         </div>
                     )
                 })}

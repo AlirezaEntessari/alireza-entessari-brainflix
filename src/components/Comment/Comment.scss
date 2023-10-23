@@ -5,12 +5,12 @@
 
 .comment {
 
-    padding: 16px;
+    padding: 1rem;
     font-weight: 900;
     border-bottom: 1px solid $brainflix-mercury;
     border-top: 1px solid $brainflix-mercury;
-    height: 100px;
-    padding-bottom: 32px;
+    height: 6.25rem;
+    padding-bottom: 2rem;
 
     &__container {
         display: flex;
@@ -18,15 +18,14 @@
 
     &__image {
         background-color: $brainflix-mercury;
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
         border-radius: 50%;
-        margin-right: 16px;
+        margin-right: 1rem;
     }
 
     &__name {
-        // margin-right: 128px;
-        margin-right: 250px;
+        margin-right: 15.625rem;
     }
 
     &__timestamp {
@@ -36,7 +35,7 @@
 
     &__comment {
         margin-top: 0;
-        margin-left: 72px;
+        margin-left: 4.5rem;
         width: 60%;
         
     }
@@ -47,18 +46,18 @@
 
     .comment {
 
-        margin-left: 36px;
-        margin-right: 36px;
-        padding-bottom: 24px;
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        padding-bottom: 1.5rem;
 
 
         &__image {
-            margin-right: 24px;
+            margin-right: 1.5rem;
         }
 
        
         &__name {
-            margin-right: 550px;
+            margin-right: 34.375rem;
         }
 
         &__comment {
@@ -74,7 +73,19 @@
 
     .comment {
 
-        margin-left: 200px;
+        margin-left: 8.4375rem;
+        width: 62.5rem;
+
+        &__image {
+            width: 3rem;
+            height: 3rem;
+        }
+
+
+        &__comment {
+            width: 700px;
+        }
+      
 
     }
 }

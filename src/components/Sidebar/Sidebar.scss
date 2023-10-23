@@ -5,7 +5,7 @@
 
 .sidebar{
 
-    padding: 16px;
+    padding: 1rem;
 
     &__container {
         display: flex;
@@ -13,28 +13,28 @@
 
     &__header {
         color: $brainflix-silver;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     &__image {
         width: 25%;
         height: 20%;
         border-radius: 4px;
-        margin-right: 16px;
-        padding-bottom: 16px;
+        margin-right: 1rem;
+        padding-bottom: 1rem;
     }
 
     &__title {
         width: 60%;
         margin-top: 0;
-        // padding-bottom: 12px;
     }
 
     &__author {
-        margin-top: 12px;
+        margin-top: .75rem;
         font-weight: 900;
         display: block;
-        font-size: 16px;
+        font-size: 1rem;
+        color: $brainflix-black;
     }
    
 }
@@ -43,7 +43,7 @@
 
     .sidebar {
 
-        padding-left: 48px;
+        padding-left: 3rem;
 
         &__image {
             width: 20%;
@@ -55,8 +55,8 @@
         }
 
         &__author {
-            font-size: 18px;
-            margin-top: 16px;
+            font-size: 1.0625rem;
+            margin-top: 1rem;
         }
        
 
@@ -66,11 +66,23 @@
 
 @include desktop {
 
-    // .sidebar {
+    .sidebar {
+
+        &__image {
+            width: 25%;
+            height: 20%;
+        }
+
+        &__title {
+            width: 35%;
+        }
+
+        &__author {
+            margin-top: .875rem;
+        }
 
     
-    // }
-
+    }
 
 
 }
