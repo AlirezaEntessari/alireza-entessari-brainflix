@@ -16,10 +16,7 @@ const Sidebar = ( {sideBarDetails} ) => {
                     )
                 })}
             </div>
-            
-
-
-
+       
 
         </>
     )

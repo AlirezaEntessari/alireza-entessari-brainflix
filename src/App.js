@@ -37,7 +37,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="" element={<UploadPage/>} />
+          <Route path="upload/:uploadId" element={<UploadPage/>} />
           <Route path="" element={<HomePage/>} />
         </Routes>
       </BrowserRouter>

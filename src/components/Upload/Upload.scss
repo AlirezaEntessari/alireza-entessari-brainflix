@@ -1,0 +1,77 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+
+
+.upload {
+
+    border-top: 2px solid $brainflix-mercury;
+
+    &__title {
+        padding-top: 16px;
+        font-weight: 32px;
+        line-height: 32px;
+        font-weight: 700;
+        padding-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    &__thumbnail {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+    }
+
+    &__thumbnail--label {
+        color: $brainflix-silver;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    &__thumbnail--image {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    &__inputs--container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    &__label {
+        display: block;
+        color: $brainflix-silver;
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    &__input {
+        margin-bottom: 24px;
+        padding: 10px;
+        width: 95%;
+        background-color: $brainflix-alabaster;
+        border-radius: 4px;
+        border-color: $brainflix-mercury;
+    }
+
+    &__input::placeholder {
+        color: $brainflix-black;
+    }
+
+    &__description--label {
+        display: block;
+        color: $brainflix-silver;
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    &__description {
+        padding: 12px;
+        width: 94%;
+        background-color: $brainflix-alabaster;
+        border-radius: 6px;
+        border-color: $brainflix-mercury;
+    }
+
+
+} 
