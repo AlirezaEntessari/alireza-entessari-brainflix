@@ -1,7 +1,8 @@
 import './Description.scss'
 import Views from '../../assets/icons/Icons/views.svg'
 import Likes from '../../assets/icons/Icons/likes.svg'
-import React, {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export const Description = ({videoDetails}) => {
 
@@ -13,6 +14,18 @@ export const Description = ({videoDetails}) => {
         return formattedDate;
 
     }
+
+    // useEffect(() => {
+    //     const getComments = async () => {
+    //         const { data } = await axios.get(`${baseApiUrl}/videos/${comments.id}?api_key=${apiKey}`);
+    //         console.log(data);
+    //         setCommentsData(data);
+    //     }
+    
+    //     getComments();
+    //   }, [])
+
+
 
 
     return (

@@ -1,6 +1,19 @@
 import './Sidebar.scss'
 
 const Sidebar = ( {sideBarDetails} ) => {
+
+    // useEffect(() => {
+    //     const getVideos = async () => {
+    //         const { data } = await axios.get(`${baseApiUrl}/videos/?api_key=${apiKey}`);
+    //         console.log(data);
+    //         setCommentsData(data);
+    //     }
+    
+    //     getVideos();
+    //   }, [])
+
+
+
     return (
         <>
             <div className='sidebar'>

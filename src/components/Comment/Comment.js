@@ -17,6 +17,8 @@ const Comment = ( { name, comment, timestamp } ) => {
         setFormattedDate(formattedDate);
     }, [data.timestamp]);
 
+    
+
 
     return (
 

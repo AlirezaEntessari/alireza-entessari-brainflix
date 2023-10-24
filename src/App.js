@@ -7,7 +7,7 @@ import sidebarData from './data/Data/videos.json';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { Description } from './components/Description/Description';
 import { AddComment } from './components/AddComment/AddComment';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import './App.scss'
 import { HomePage } from './pages/HomePage/HomePage';
 import { UploadPage } from './pages/UploadPage/UploadPage';
@@ -17,6 +17,8 @@ function App() {
 
   const [ videoDetails, setVideoDetails ] = useState(videoData[0]); 
   const [ sideBarDetails, setSidebarDetails ] = useState(sidebarData);
+
+  const { uploadId } = useParams();
 
 
   return (
@@ -37,7 +39,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
+          <Route path="upload" element={<UploadPage/>} />
           <Route path="upload/:uploadId" element={<UploadPage/>} />
+          {/* <Route path={`upload/${uploadId.id}`} element={<UploadPage/>} /> */}
           <Route path="" element={<HomePage/>} />
         </Routes>
       </BrowserRouter>
