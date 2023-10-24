@@ -11,7 +11,7 @@
         padding-top: 16px;
         font-weight: 32px;
         line-height: 32px;
-        font-weight: 700;
+        font-weight: 900;
         padding-bottom: 16px;
         padding-left: 24px;
     }
@@ -26,6 +26,7 @@
         color: $brainflix-silver;
         font-size: 16px;
         font-weight: 800;
+        word-spacing: 1px;
     }
 
     &__thumbnail--image {
@@ -43,6 +44,7 @@
         color: $brainflix-silver;
         font-weight: 800;
         font-size: 16px;
+        word-spacing: 1px;
     }
 
     &__input {
@@ -56,6 +58,7 @@
 
     &__input::placeholder {
         color: $brainflix-black;
+        font-size: 15px;
     }
 
     &__description--label {
@@ -63,15 +66,110 @@
         color: $brainflix-silver;
         font-weight: 800;
         font-size: 16px;
+        word-spacing: 1px;
     }
 
     &__description {
         padding: 12px;
-        width: 94%;
+        width: 94.5%;
         background-color: $brainflix-alabaster;
         border-radius: 6px;
         border-color: $brainflix-mercury;
+        font-size: 15px;
     }
 
-
 } 
+
+@include tablet {
+
+    .upload {
+        // padding: 24px;
+        padding: 32px;
+        
+
+        &__title {
+            border-bottom: 2px solid $brainflix-mercury;
+            font-size: 42px;
+            font-weight: 400;
+            padding-bottom: 36px;
+        }
+
+        &__thumbnail--label {
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        &__thumbnail--image {
+            width: 55%;
+        }
+
+        &__inputs--container {
+            border-bottom: 2px solid $brainflix-mercury;
+        }
+
+        &__label {
+            margin-top: 12px;
+        }
+
+        &__input {
+            width: 100%;
+        }
+
+        &__description--label {
+            margin-top: 6px;
+        }
+
+        &__description {
+            margin-bottom: 28px;
+            height: 90px;
+            width: 100%;
+        }
+
+
+    }
+
+}
+
+@include desktop {
+
+    .upload {
+
+        padding: 128px;
+        padding-top: 0;
+
+        &__container {
+            display: flex;
+            border-bottom: 2px solid $brainflix-mercury;
+            padding-bottom: 24px;
+        }
+
+        &__thumbnail {
+            width: 35%;
+        }
+
+        &__label {
+            margin-top: 36px;
+            margin-bottom: 10px;
+        }
+
+        &__input {
+            width: 990px;
+            padding: 14px;
+        }
+
+        &__thumbnail--image {
+            width: 100%;
+        }
+
+        &__inputs--container {
+            border-bottom: 2px solid $brainflix-white;
+        }
+
+        &__description--label {
+            margin-bottom: 6px;
+        }
+
+
+    }
+
+}

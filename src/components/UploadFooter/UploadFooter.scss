@@ -1,0 +1,85 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+
+.footer {
+
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+
+    &__button {
+        background-color: $brainflix-blue;
+        color: $brainflix-white;
+        width: 99%;
+        border-radius: 4px;
+        padding: 16px;
+        border-color: $brainflix-blue;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 36px;
+        background-image: url("../../assets/icons/Icons/publish.svg");
+        background-repeat: no-repeat;
+        background-position: 0.75rem;
+    }
+
+    &__text {
+        color: $brainflix-blue;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+}
+
+
+@include tablet {
+
+    .footer {
+
+        padding-top: 16px;
+        padding-bottom: 64px;
+
+        
+        
+        &__button {
+            width: 25%;
+            position: absolute;
+            right: 40px;
+        }
+
+        &__text {
+            margin-bottom: 0;
+            margin-left: 128px;
+            margin-top: 18px;
+            // position: absolute;
+            // left: 2px;
+        }
+
+
+    }
+}
+
+@include desktop {
+
+    .footer {
+
+        &__button {
+            // width: 15%;
+            width: 200px;
+            bottom: 80px;
+            right: 135px;
+        }
+
+        &__text {
+            position: absolute;
+            bottom: 130px;
+            right: 400px;
+        }
+
+
+
+    }
+
+
+}

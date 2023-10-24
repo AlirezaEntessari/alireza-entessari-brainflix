@@ -76,6 +76,7 @@
     .header {
 
         padding: 1.5rem;
+        padding-bottom: 0;
         
         &__top{
             display: flex;
@@ -84,10 +85,17 @@
 
     
         &__logo {
-            width: 15%;
-            height: 15%;
+            // width: 15%;
+            // height: 15%;
+            width: 150px;
+            height: 150px;
             margin-left: 1.75rem;
             margin-right: 6.25rem;
+            padding-bottom: 0;
+        }
+
+        &__form {
+            margin-top: 50px;
         }
 
         &__input {
@@ -117,6 +125,7 @@
             background-image: url("../../assets/icons/Icons/upload.svg");
             background-repeat: no-repeat;
             background-position: .75rem;
+            margin-bottom: 50px;
         }
 
     }
@@ -128,8 +137,10 @@
     .header {
 
         &__logo {
-            width: 10%;
-            height: 10%;
+            // width: 10%;
+            // height: 10%;
+            width: 150px;
+            height: 150px;
             margin-left: 9.375rem;
             margin-right: 37.5rem;
         }
@@ -137,7 +148,7 @@
         &__button {
             width: 10%;
             right: 23.125rem;
-            bottom: .875rem;
+            bottom: 7px;
         }
 
 
