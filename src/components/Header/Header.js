@@ -27,7 +27,7 @@ const Header = () => {
                         <div className="header__bottom">
                             <div className="header__bottom--container">
                                 <img className='header__upload' src={ UploadIcon } alt="Upload Icon" />
-                                <Link to="upload/:uploadId"><button className='header__button'>UPLOAD</button></Link>
+                                <Link to="/upload"><button className='header__button'>UPLOAD</button></Link>
                             </div>
                         </div>
                     </nav>

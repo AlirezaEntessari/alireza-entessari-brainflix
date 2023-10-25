@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import './App.scss'
 import { HomePage } from './pages/HomePage/HomePage';
 import { UploadPage } from './pages/UploadPage/UploadPage';
+import { NotFound } from './pages/NotFound/NotFound'; 
  
 
 function App() {
@@ -39,10 +40,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>} />
-          <Route path="upload" element={<UploadPage/>} />
-          <Route path="upload/:uploadId" element={<UploadPage/>} />
+          <Route path="/upload" element={<UploadPage/>} />
+          <Route path="/videos/:videoId" element={<HomePage/>}/>
           {/* <Route path={`upload/${uploadId.id}`} element={<UploadPage/>} /> */}
-          <Route path="" element={<HomePage/>} />
+          {/* <Route path="" element={<HomePage/>} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       

@@ -16,7 +16,7 @@ import { Hero } from "../../components/Hero/Hero";
 import { Sidebar } from "../../components/Sidebar/Sidebar";
 import { Description } from "../../components/Description/Description";
 import { AddComment } from "../../components/AddComment/AddComment";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom"; 
+import { useParams, useNavigate } from "react-router-dom"; 
 import sidebarData from '../../data/Data/videos.json';
 import videoData from '../../data/Data/video-details.json';
 import { useEffect } from "react";
@@ -26,13 +26,17 @@ import axios from "axios";
 
 export function HomePage() {
 
-  const [ videoDetails, setVideoDetails ] = useState(videoData[0]); 
+  // const [ videoDetails, setVideoDetails ] = useState(videoData[0]); 
   const [ sideBarDetails, setSidebarDetails ] = useState(sidebarData);
 
-  console.log(videoDetails.comments);
+  const navigate = useNavigate();
 
-  const { uploadId } = useParams();
+  // const [ sideBarDetails, setSidebarDetails ] = useState({});
 
+
+  // console.log(videoDetails.comments);
+
+  const { videoId } = useParams();
 
   const [currentVideo, setCurrentVideo] = useState({});
 
@@ -42,13 +46,18 @@ export function HomePage() {
 
   useEffect(() => {
     const getComments = async () => {
-        const response = await axios.get(`${baseApiUrl}/videos/84e96018-4022-434e-80bf-000ce4cd12b8?api_key=${apiKey}`);
-        // console.log(response.data);
-        setCurrentVideo(response.data);
+      try{
+          const response = await axios.get(`${baseApiUrl}/videos/${videoId || '84e96018-4022-434e-80bf-000ce4cd12b8'}?api_key=${apiKey}`);
+          // console.log(response.data);
+          setCurrentVideo(response.data);
+      } catch(error){
+          console.log(error);
+          navigate("/404");
+      } 
     }
 
     getComments();
-  }, [])
+  }, [videoId])
 
   
 
@@ -63,7 +72,7 @@ export function HomePage() {
           <CommentList comments={currentVideo.comments} />
         </div>
         <div className="App__sidebar">
-          <Sidebar sideBarDetails={sideBarDetails} />
+          <Sidebar />
         </div>
       </div>
     </>
