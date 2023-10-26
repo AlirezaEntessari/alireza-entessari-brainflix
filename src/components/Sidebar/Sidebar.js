@@ -5,18 +5,6 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
 
-   
-
-    // useEffect(() => {
-    //     const getVideos = async () => {
-    //         const { data } = await axios.get(`${baseApiUrl}/videos/?api_key=${apiKey}`);
-    //         console.log(data);
-    //         setCommentsData(data);
-    //     }
-    
-    //     getVideos();
-    //   }, [])
-
     const [allVideos, setAllVideos] = useState([]);
 
     const baseApiUrl = "https://project-2-api.herokuapp.com";
@@ -24,8 +12,13 @@ const Sidebar = () => {
 
     useEffect(() => {
         const getVideos = async () => {
-            const response = await axios.get(`${baseApiUrl}/videos/?api_key=${apiKey}`);
-            setAllVideos(response.data);
+            try{
+                const response = await axios.get(`${baseApiUrl}/videos/?api_key=${apiKey}`);
+                setAllVideos(response.data);
+            } catch(error){
+                console.log(error);
+            }
+          
         }
 
         getVideos();
@@ -41,7 +34,7 @@ const Sidebar = () => {
                     return (
                         <Link className='sidebar__link' to={`/videos/${video.id}`}>
                             <div className="sidebar__container">
-                                <img className="sidebar__image" src={video.image} alt="" />
+                                <img className="sidebar__image" src={video.image} alt={video.title} />
                                 <h3 className="sidebar__title">{video.title} <span className='sidebar__author'>{video.channel}</span></h3>
                             </div>
                         </Link>

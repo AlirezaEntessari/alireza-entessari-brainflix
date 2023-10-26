@@ -8,23 +8,23 @@
     border-top: 2px solid $brainflix-mercury;
 
     &__title {
-        padding-top: 16px;
-        font-weight: 32px;
-        line-height: 32px;
+        padding-top: 1rem;
+        font-weight: 2rem;
+        line-height: 2rem;
         font-weight: 900;
-        padding-bottom: 16px;
-        padding-left: 24px;
+        padding-bottom: 1rem;
+        padding-left: 1.5rem;
     }
 
     &__thumbnail {
-        padding-left: 24px;
-        padding-right: 24px;
-        padding-bottom: 16px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     &__thumbnail--label {
         color: $brainflix-silver;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 800;
         word-spacing: 1px;
     }
@@ -35,21 +35,21 @@
     }
 
     &__inputs--container {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     &__label {
         display: block;
         color: $brainflix-silver;
         font-weight: 800;
-        font-size: 16px;
+        font-size: 1rem;
         word-spacing: 1px;
     }
 
     &__input {
-        margin-bottom: 24px;
-        padding: 10px;
+        margin-bottom: 1.5rem;
+        padding: .625rem;
         width: 95%;
         background-color: $brainflix-alabaster;
         border-radius: 4px;
@@ -58,24 +58,24 @@
 
     &__input::placeholder {
         color: $brainflix-black;
-        font-size: 15px;
+        font-size: .9375rem;
     }
 
     &__description--label {
         display: block;
         color: $brainflix-silver;
         font-weight: 800;
-        font-size: 16px;
+        font-size: 1rem;
         word-spacing: 1px;
     }
 
     &__description {
-        padding: 12px;
+        padding: .75rem;
         width: 94.5%;
         background-color: $brainflix-alabaster;
         border-radius: 6px;
         border-color: $brainflix-mercury;
-        font-size: 15px;
+        font-size: .9375rem;
     }
 
 } 
@@ -83,20 +83,19 @@
 @include tablet {
 
     .upload {
-        // padding: 24px;
-        padding: 32px;
+        padding: 2rem;
         
 
         &__title {
             border-bottom: 2px solid $brainflix-mercury;
-            font-size: 42px;
+            font-size: 2.625rem;
             font-weight: 400;
-            padding-bottom: 36px;
+            padding-bottom: 2.25rem;
         }
 
         &__thumbnail--label {
-            margin-top: 36px;
-            margin-bottom: 12px;
+            margin-top: 2.25rem;
+            margin-bottom: .75rem;
         }
 
         &__thumbnail--image {
@@ -108,7 +107,7 @@
         }
 
         &__label {
-            margin-top: 12px;
+            margin-top: .75rem;
         }
 
         &__input {
@@ -116,12 +115,12 @@
         }
 
         &__description--label {
-            margin-top: 6px;
+            margin-top: .375rem;
         }
 
         &__description {
-            margin-bottom: 28px;
-            height: 90px;
+            margin-bottom: 1.75rem;
+            height: 5.625rem;
             width: 100%;
         }
 
@@ -134,13 +133,13 @@
 
     .upload {
 
-        padding: 128px;
+        padding: 8rem;
         padding-top: 0;
 
         &__container {
             display: flex;
             border-bottom: 2px solid $brainflix-mercury;
-            padding-bottom: 24px;
+            padding-bottom: 1.5rem;
         }
 
         &__thumbnail {
@@ -148,13 +147,13 @@
         }
 
         &__label {
-            margin-top: 36px;
-            margin-bottom: 10px;
+            margin-top: 2.25rem;
+            margin-bottom: .625rem;
         }
 
         &__input {
-            width: 990px;
-            padding: 14px;
+            width: 61.875rem;
+            padding: .875rem;
         }
 
         &__thumbnail--image {
@@ -166,7 +165,7 @@
         }
 
         &__description--label {
-            margin-bottom: 6px;
+            margin-bottom: .375rem;
         }
 
 

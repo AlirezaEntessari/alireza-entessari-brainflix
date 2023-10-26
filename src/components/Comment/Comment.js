@@ -1,5 +1,4 @@
 import './Comment.scss'
-import Image from '../../assets/images/Images/Mohan-muruge.jpg'
 import React, {useState, useEffect} from 'react'
 
 
