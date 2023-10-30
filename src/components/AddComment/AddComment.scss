@@ -35,6 +35,7 @@
         color: $brainflix-black;
         margin-left: 2rem;
         padding: 0.75rem;
+        border-radius: 4px;
     }
 
 
@@ -78,8 +79,8 @@
         &__button {
             width: 12.5rem;
             position: absolute;
-            right: 4.5rem;
-            top: 64.0625rem;
+            right: 5rem;
+            top: 69.0625rem;
         }
 
 
@@ -93,20 +94,22 @@
 
         margin-left: 6.25rem;
 
+        &__container {
+            width: 46.875rem;
+        }
+
         &__label {
-            left: 15rem;
+            left: 14.2813rem;
         }
 
         &__textbox {
-            width: 37.5rem;
+            width: 40.625rem;
         }
 
         &__button {
-            right: 62.5rem;
-            top: 27.1875rem;
+            right: 46.875rem;
+            top: 27.3125rem;
         }
-
-
 
     }
 

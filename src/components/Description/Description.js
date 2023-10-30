@@ -1,7 +1,7 @@
 import './Description.scss'
 import Views from '../../assets/icons/Icons/views.svg'
 import Likes from '../../assets/icons/Icons/likes.svg'
-import React, {useState, useEffect} from 'react'
+
 
 export const Description = ({videoDetails}) => {
 

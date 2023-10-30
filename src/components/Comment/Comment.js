@@ -1,5 +1,4 @@
 import './Comment.scss'
-import Image from '../../assets/images/Images/Mohan-muruge.jpg'
 import React, {useState, useEffect} from 'react'
 
 
@@ -16,6 +15,8 @@ const Comment = ( { name, comment, timestamp } ) => {
 
         setFormattedDate(formattedDate);
     }, [data.timestamp]);
+
+    
 
 
     return (
