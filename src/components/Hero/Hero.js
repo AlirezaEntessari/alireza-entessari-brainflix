@@ -1,6 +1,7 @@
 import './Hero.scss'
 
 const Hero = ( { image } ) => {
+    console.log(image);
     return (
         <>
             <div className="hero">

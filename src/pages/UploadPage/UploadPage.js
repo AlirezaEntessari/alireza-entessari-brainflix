@@ -8,7 +8,7 @@ export function UploadPage() {
         <>
             <Header />
             <Upload />
-            <UploadFooter />
+            {/* <UploadFooter /> */}
         
         </>
         

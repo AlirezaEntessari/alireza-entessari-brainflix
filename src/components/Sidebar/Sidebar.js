@@ -7,7 +7,8 @@ const Sidebar = () => {
 
     const [allVideos, setAllVideos] = useState([]);
 
-    const baseApiUrl = "https://project-2-api.herokuapp.com";
+    // const baseApiUrl = "https://project-2-api.herokuapp.com";
+    const baseApiUrl = "http://localhost:8080";
     const apiKey = "62b73dce-4cc3-4a46-88f6-f8146e4b7a2f";
 
     useEffect(() => {
@@ -34,7 +35,7 @@ const Sidebar = () => {
                     return (
                         <Link className='sidebar__link' to={`/videos/${video.id}`}>
                             <div className="sidebar__container">
-                                <img className="sidebar__image" src={video.image} alt={video.title} />
+                                <img className="sidebar__image" src={`${baseApiUrl}/${video.image}`} alt={video.title} />
                                 <h3 className="sidebar__title">{video.title} <span className='sidebar__author'>{video.channel}</span></h3>
                             </div>
                         </Link>
