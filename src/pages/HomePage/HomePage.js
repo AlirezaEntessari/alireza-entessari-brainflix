@@ -49,7 +49,6 @@ export function HomePage() {
   return (
     <>
       <Header />
-      {/* <Hero image={currentVideo.image} /> */}
       <Hero image={`${baseApiUrl}/${currentVideo.image}`} />
       <div className="App__container">
         <div className="App__subcontainer">
